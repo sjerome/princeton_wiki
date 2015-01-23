@@ -21,8 +21,7 @@ SECRET_KEY = '$+2aj0d3m0fg$98r!162%*wg+wn%yc+m@2@*8pq3xi!@&+!0wi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['princeton-wiki.herokuapp.com']
 
@@ -36,7 +35,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'princeton_wiki.apps.princeton_wiki_app'
+    'princeton_wiki.apps.princeton_wiki_app',
+    'princeton_wiki.mytemplates'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -64,8 +64,8 @@ DATABASES = {
     }
 }
 
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
