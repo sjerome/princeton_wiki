@@ -1,0 +1,1 @@
+gunicorn princeton_wiki.wsgi
