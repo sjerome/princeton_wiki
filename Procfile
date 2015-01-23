@@ -1,1 +1,1 @@
-gunicorn princeton_wiki.wsgi
+web: gunicorn princeton_wiki.wsgi
